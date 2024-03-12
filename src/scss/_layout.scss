@@ -1,0 +1,32 @@
+@use "base";
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: base.$primary-blue;
+    width: 100%;
+    height: 100vh;
+}
+
+#text-rubrik {
+
+    display: flex;
+    height: 100vh;
+
+    justify-content: center; /* Centrera innehållet horisontellt */
+    align-items: center;
+
+
+
+    h1 {
+        color: base.$primary-white;
+        font-family: base.$primary-font;
+        text-align: center;
+        font-size: 2.5rem;
+}
+
+}

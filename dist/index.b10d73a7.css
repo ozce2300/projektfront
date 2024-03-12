@@ -1,0 +1,34 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #00539f;
+  width: 100%;
+  height: 100vh;
+}
+
+#text-rubrik {
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  display: flex;
+}
+
+#text-rubrik h1 {
+  color: #fff;
+  text-align: center;
+  font-family: Roboto, helvetica, sans-serif, arial;
+  font-size: 2.5rem;
+}
+
+#container {
+  grid-template: "header" 100vh
+                 "body"
+                 "footer"
+                 / 1fr;
+  display: grid;
+}
+/*# sourceMappingURL=index.b10d73a7.css.map */
