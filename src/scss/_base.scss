@@ -1,6 +1,6 @@
 $primary-blue:#00539F;
-$primary-blue-secondery: lighten(#00539F,5%);
-$primary-blue-third: darken(#00539F ,10%);
+$primary-blue-secondery: lighten($primary-blue,30%);
+$primary-blue-third: darken($primary-blue ,10%);
 $primary-bg-color-first: grey;
 
 $primary-white: white;
@@ -13,7 +13,10 @@ $primary-font: "Roboto", helvetica, sans-serif, arial;
   }
 
 
-%margin-auto {
-    margin: 0 auto;
-}
+%round {
+  width: 100%;
+  max-width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  }
 
