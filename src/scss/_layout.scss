@@ -27,19 +27,60 @@ header {
 .round-one {
 @extend %round;
     background-color: blue;
-    animation: polissiren 0s infinite;}
+    animation: polissiren 1s infinite;}
 
 .round-two {
     @extend %round;
     background-color: white;
-    animation: polissirenrevert 0s infinite;}
+    animation: polissirenrevert 1s infinite;}
+
+.handelser{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
 
 h1 {
     
     color: base.$primary-white;
     font-family: base.$primary-font;
-    font-weight: 300;
+    font-weight: 700;
     text-align: center;
     font-size: 2.5rem;
 }
 
+.main-h1 {
+    
+    color: base.$primary-blue;
+    font-family: base.$primary-font;
+    font-weight: 500;
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+h2 {
+    color: base.$primary-blue;
+    font-family: base.$primary-font;
+    font-weight: 300;
+    font-size: 2rem;
+
+
+
+}
+
+h3 {
+    color: base.$primary-blue-third;
+    font-family: base.$primary-font;
+    font-weight: 100;
+    font-size: 1.5rem;
+
+
+}
+h5 {
+    color: base.$primary-blue-third;
+    font-family: base.$primary-font;
+    font-weight: 100;
+    font-size: 1rem;
+
+
+}

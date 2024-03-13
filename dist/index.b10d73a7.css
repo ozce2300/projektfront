@@ -251,12 +251,18 @@ header {
 
 .round-one {
   background-color: #00f;
-  animation: infinite polissiren;
+  animation: 1s infinite polissiren;
 }
 
 .round-two {
   background-color: #fff;
-  animation: infinite polissirenrevert;
+  animation: 1s infinite polissirenrevert;
+}
+
+.handelser {
+  flex-direction: column;
+  gap: 20px;
+  display: flex;
 }
 
 h1 {
@@ -264,6 +270,35 @@ h1 {
   text-align: center;
   font-family: Roboto, helvetica, sans-serif, arial;
   font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.main-h1 {
+  color: #00539f;
+  text-align: center;
+  font-family: Roboto, helvetica, sans-serif, arial;
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+
+h2 {
+  color: #00539f;
+  font-family: Roboto, helvetica, sans-serif, arial;
+  font-size: 2rem;
   font-weight: 300;
+}
+
+h3 {
+  color: #00386c;
+  font-family: Roboto, helvetica, sans-serif, arial;
+  font-size: 1.5rem;
+  font-weight: 100;
+}
+
+h5 {
+  color: #00386c;
+  font-family: Roboto, helvetica, sans-serif, arial;
+  font-size: 1rem;
+  font-weight: 100;
 }
 /*# sourceMappingURL=index.b10d73a7.css.map */
