@@ -1,12 +1,15 @@
 @use "base";
 @use "grid";
 @use "keyframes";
-
+@use "teckensnitt";
+@use "leaflet";
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
+
+
 
 header {
     grid-area: header;
@@ -34,53 +37,30 @@ header {
     background-color: white;
     animation: polissirenrevert 1s infinite;}
 
-.handelser{
+main {    box-sizing: border-box;
+
+        width: 100%;
+        grid-area: main;
+
+    }
+
+#main-show {
+    box-sizing: border-box;
+
     display: flex;
     flex-direction: column;
-    gap: 20px;
-}
-
-h1 {
-    
-    color: base.$primary-white;
-    font-family: base.$primary-font;
-    font-weight: 700;
-    text-align: center;
-    font-size: 2.5rem;
-}
-
-.main-h1 {
-    
-    color: base.$primary-blue;
-    font-family: base.$primary-font;
-    font-weight: 500;
-    text-align: center;
-    font-size: 2.5rem;
-}
-
-h2 {
-    color: base.$primary-blue;
-    font-family: base.$primary-font;
-    font-weight: 300;
-    font-size: 2rem;
-
-
+    width: 100%;
 
 }
 
-h3 {
-    color: base.$primary-blue-third;
-    font-family: base.$primary-font;
-    font-weight: 100;
-    font-size: 1.5rem;
-
-
-}
-h5 {
-    color: base.$primary-blue-third;
-    font-family: base.$primary-font;
-    font-weight: 100;
-    font-size: 1rem;
-
+.handelser{
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px;
+    gap: 15px;
+    margin: 20px 0;
 
 }
+

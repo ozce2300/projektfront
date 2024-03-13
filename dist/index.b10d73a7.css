@@ -192,10 +192,11 @@ template, [hidden] {
 }
 
 #container {
-  grid-template: "header" 100vh
-                 "main" 1fr
-                 "footer" 1fr
-                 / 1fr;
+  grid-template-rows: 100vh 1fr 1fr;
+  grid-template-areas: "header"
+                       "main"
+                       "footer";
+  width: 100%;
   display: grid;
 }
 
@@ -225,6 +226,53 @@ template, [hidden] {
   100% {
     background-color: #00f;
   }
+}
+
+.h1 h1 {
+  color: #fff;
+  text-align: center;
+  font-family: Roboto, helvetica, sans-serif, arial;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.main-h1 {
+  padding: 0 20px;
+  display: flex;
+}
+
+.main-h1 h1 {
+  color: #00539f;
+  text-align: center;
+  font-family: Roboto, helvetica, sans-serif, arial;
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+
+h2 {
+  color: #00539f;
+  font-family: Roboto, helvetica, sans-serif, arial;
+  font-size: 2rem;
+  font-weight: 300;
+}
+
+h3 {
+  color: #00386c;
+  font-family: Roboto, helvetica, sans-serif, arial;
+  font-size: 1.5rem;
+  font-weight: 100;
+  line-height: 2rem;
+}
+
+h5 {
+  color: #00386c;
+  font-family: Roboto, helvetica, sans-serif, arial;
+  font-size: 1rem;
+  font-weight: 100;
+}
+
+#map {
+  height: 180px;
 }
 
 * {
@@ -259,46 +307,26 @@ header {
   animation: 1s infinite polissirenrevert;
 }
 
-.handelser {
+main {
+  box-sizing: border-box;
+  grid-area: main;
+  width: 100%;
+}
+
+#main-show {
+  box-sizing: border-box;
   flex-direction: column;
-  gap: 20px;
+  width: 100%;
   display: flex;
 }
 
-h1 {
-  color: #fff;
-  text-align: center;
-  font-family: Roboto, helvetica, sans-serif, arial;
-  font-size: 2.5rem;
-  font-weight: 700;
-}
-
-.main-h1 {
-  color: #00539f;
-  text-align: center;
-  font-family: Roboto, helvetica, sans-serif, arial;
-  font-size: 2.5rem;
-  font-weight: 500;
-}
-
-h2 {
-  color: #00539f;
-  font-family: Roboto, helvetica, sans-serif, arial;
-  font-size: 2rem;
-  font-weight: 300;
-}
-
-h3 {
-  color: #00386c;
-  font-family: Roboto, helvetica, sans-serif, arial;
-  font-size: 1.5rem;
-  font-weight: 100;
-}
-
-h5 {
-  color: #00386c;
-  font-family: Roboto, helvetica, sans-serif, arial;
-  font-size: 1rem;
-  font-weight: 100;
+.handelser {
+  box-sizing: border-box;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+  margin: 20px 0;
+  padding: 0 20px;
+  display: flex;
 }
 /*# sourceMappingURL=index.b10d73a7.css.map */

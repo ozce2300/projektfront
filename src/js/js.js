@@ -17,6 +17,7 @@ async function getDisplay(data) {
         let name = item.type
         let summary = item.summary
         let text = item.name
+        let textNew = text.split(",")
 
         let mainEL = document.getElementById("main-show")
         if (name !== "Övrigt" && name !== "Sammanfattning natt"&& name !== "Sammanfattning kväll och natt" && name !== "Trafikkontroll") {
@@ -24,8 +25,8 @@ async function getDisplay(data) {
         <article class="handelser">
         <h2>${name}</h2>
         <h3>${summary}</h3>
-        <h5>${text}</5>
-        <article>
+        <h5>${textNew[0]} &nbsp;   ${textNew[2]}</h5>
+        </article>
         `
     }
 
@@ -35,6 +36,4 @@ async function getDisplay(data) {
         console.error('Error', error);
     }}
     
-
-
 getData()
