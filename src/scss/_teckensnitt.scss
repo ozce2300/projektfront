@@ -1,5 +1,10 @@
 @use "base";
 .h1 {
+    display: flex;
+    justify-content: center;    
+    max-width: 100vw; /* Begränsa bredden till skärmens bredd */
+    overflow-x: hidden; /* Dölj horisontell scrollbar */
+
 h1 {
     
     color: base.$primary-white;
@@ -7,10 +12,13 @@ h1 {
     font-weight: 700;
     text-align: center;
     font-size: 2.5rem;
+    
 }}
 
 .main-h1 {
-    
+    max-width: 100vw; /* Begränsa bredden till skärmens bredd */
+    overflow-x: hidden; /* Dölj horisontell scrollbar */
+    width: 100%;
 display: flex;
 padding: 0 20px;
 
