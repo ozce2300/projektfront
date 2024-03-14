@@ -9,7 +9,7 @@
 87C:\Users\ozgur\Desktop\projektfront\node_modules\svgo\plugins\addClassesToSVGElement.js133547435486212203 0
 80C:\Users\ozgur\Desktop\projektfront\node_modules\caniuse-lite\data\regions\MX.js133547435513992183 0
 88C:\Users\ozgur\Desktop\projektfront\node_modules\csso\node_modules\mdn-data\package.json133547435478882220 0
-48C:\Users\ozgur\Desktop\projektfront\package.json133548540587939887 0
+48C:\Users\ozgur\Desktop\projektfront\package.json133548557924592778 0
 63C:\Users\ozgur\Desktop\projektfront\node_modules\domelementtype133547435474052193 1
 121C:\Users\ozgur\Desktop\projektfront\node_modules\node-gyp-build-optional-packages\node_modules\detect-libc\lib\process.js133547435469824108 0
 80C:\Users\ozgur\Desktop\projektfront\node_modules\caniuse-lite\data\regions\CR.js133547435496082185 0
@@ -52,7 +52,7 @@
 106C:\Users\ozgur\Desktop\projektfront\node_modules\csso\node_modules\css-tree\cjs\generator\token-before.cjs133547435495452183 0
 72C:\Users\ozgur\Desktop\projektfront\node_modules\react-error-overlay\lib133547435467562194 1
 118C:\Users\ozgur\Desktop\projektfront\node_modules\@parcel\optimizer-htmlnano\node_modules\svgo\plugins\removeDoctype.js133547435487362351 0
-40C:\Users\ozgur\Desktop\projektfront\dist133548540593442395 1
+40C:\Users\ozgur\Desktop\projektfront\dist133548557933979758 1
 99C:\Users\ozgur\Desktop\projektfront\node_modules\caniuse-lite\data\features\intersectionobserver.js133547435510262434 0
 57C:\Users\ozgur\Desktop\projektfront\node_modules\escalade133547435473562187 1
 58C:\Users\ozgur\Desktop\projektfront\node_modules\is-number133547435468682197 1
@@ -95,7 +95,7 @@
 76C:\Users\ozgur\Desktop\projektfront\node_modules\@swc\helpers\cjs\_using.cjs133547435493042190 0
 76C:\Users\ozgur\Desktop\projektfront\node_modules\lmdb\src\ordered-binary.cpp133547435493662220 0
 63C:\Users\ozgur\Desktop\projektfront\node_modules\csso\README.md133547435494162199 0
-50C:\Users\ozgur\Desktop\projektfront\src\index.html133548496818046886 0
+50C:\Users\ozgur\Desktop\projektfront\src\index.html133548552772472590 0
 113C:\Users\ozgur\Desktop\projektfront\node_modules\@parcel\optimizer-htmlnano\node_modules\csso\lib\clean\Atrule.js133547435475452284 0
 58C:\Users\ozgur\Desktop\projektfront\node_modules\callsites133547435469862237 1
 80C:\Users\ozgur\Desktop\projektfront\node_modules\@parcel\transformer-postcss\src133547435482652195 1
@@ -116,7 +116,7 @@
 99C:\Users\ozgur\Desktop\projektfront\node_modules\css-select\node_modules\entities\lib\esm\escape.js133547435480812221 0
 63C:\Users\ozgur\Desktop\projektfront\node_modules\dom-serializer133547435476462180 1
 55C:\Users\ozgur\Desktop\projektfront\node_modules\stable133547435469832285 1
-57C:\Users\ozgur\Desktop\projektfront\src\scss\_layout.scss133548538350628290 0
+57C:\Users\ozgur\Desktop\projektfront\src\scss\_layout.scss133548557709395806 0
 54C:\Users\ozgur\Desktop\projektfront\src\scss\main.scss133548446143166310 0
 84C:\Users\ozgur\Desktop\projektfront\node_modules\lmdb\dependencies\lz4\lib\lz4file.h133547435495532179 0
 67C:\Users\ozgur\Desktop\projektfront\node_modules\path-type\index.js133547435468322215 0
@@ -201,7 +201,7 @@
 57C:\Users\ozgur\Desktop\projektfront\node_modules\argparse133547435474412270 1
 61C:\Users\ozgur\Desktop\projektfront\node_modules\svgo\plugins133547435493422275 1
 68C:\Users\ozgur\Desktop\projektfront\node_modules\weak-lru-cache\dist133547435466332186 1
-62C:\Users\ozgur\Desktop\projektfront\src\scss\_teckensnitt.scss133548491952714626 0
+62C:\Users\ozgur\Desktop\projektfront\src\scss\_teckensnitt.scss133548557480730613 0
 94C:\Users\ozgur\Desktop\projektfront\node_modules\@swc\helpers\src\_iterable_to_array_limit.mjs133547435509072183 0
 120C:\Users\ozgur\Desktop\projektfront\node_modules\@parcel\workers\test\integration\workerfarm\resolve-shared-reference.js133547435486032187 0
 70C:\Users\ozgur\Desktop\projektfront\node_modules\anymatch\package.json133547441983910858 0
@@ -1150,7 +1150,7 @@
 88C:\Users\ozgur\Desktop\projektfront\node_modules\@parcel\utils\test\input\config\.testrc133547435490602194 0
 91C:\Users\ozgur\Desktop\projektfront\node_modules\svgo\plugins\removeAttributesBySelector.js133547435490212551 0
 80C:\Users\ozgur\Desktop\projektfront\node_modules\css-select\lib\esm\types.js.map133547435490862223 0
-63C:\Users\ozgur\Desktop\projektfront\dist\index.b10d73a7.css.map133548540593408842 0
+63C:\Users\ozgur\Desktop\projektfront\dist\index.b10d73a7.css.map133548557933951953 0
 93C:\Users\ozgur\Desktop\projektfront\node_modules\@parcel\optimizer-svgo\node_modules\svgo\bin133547435467652207 1
 79C:\Users\ozgur\Desktop\projektfront\node_modules\lmdb\bin\download-prebuilds.js133547435496552193 0
 89C:\Users\ozgur\Desktop\projektfront\node_modules\css-tree\lib\syntax\node\TypeSelector.js133547435503652438 0
@@ -5355,7 +5355,7 @@
 111C:\Users\ozgur\Desktop\projektfront\node_modules\@parcel\optimizer-svgo\node_modules\csso\lib\replace\Number.js133547435486302190 0
 110C:\Users\ozgur\Desktop\projektfront\node_modules\@parcel\optimizer-svgo\node_modules\csso\lib\replace\property133547435485032175 1
 111C:\Users\ozgur\Desktop\projektfront\node_modules\@parcel\optimizer-svgo\node_modules\csso\lib\replace\String.js133547435486982206 0
-51C:\Users\ozgur\Desktop\projektfront\dist\index.html133548540593288556 0
+51C:\Users\ozgur\Desktop\projektfront\dist\index.html133548552775076310 0
 110C:\Users\ozgur\Desktop\projektfront\node_modules\@parcel\optimizer-svgo\node_modules\csso\lib\replace\Value.js133547435488052319 0
 124C:\Users\ozgur\Desktop\projektfront\node_modules\@parcel\optimizer-svgo\node_modules\csso\lib\replace\property\background.js133547435478172207 0
 131C:\Users\ozgur\Desktop\projektfront\node_modules\@parcel\optimizer-htmlnano\node_modules\svgo\plugins\removeUselessStrokeAndFill.js133547435490302462 0
@@ -6037,6 +6037,6 @@
 59C:\Users\ozgur\Desktop\projektfront\dist\index.fd141f69.css133548443956731583 0
 63C:\Users\ozgur\Desktop\projektfront\dist\index.fd141f69.css.map133548443956911693 0
 69C:\Users\ozgur\Desktop\projektfront\dist\projektfront.59712999.js.map133548329239874642 0
-59C:\Users\ozgur\Desktop\projektfront\dist\index.b10d73a7.css133548540593288556 0
-58C:\Users\ozgur\Desktop\projektfront\dist\index.9da0762a.js133548540593288556 0
-62C:\Users\ozgur\Desktop\projektfront\dist\index.9da0762a.js.map133548540593408842 0
+59C:\Users\ozgur\Desktop\projektfront\dist\index.b10d73a7.css133548557933760010 0
+58C:\Users\ozgur\Desktop\projektfront\dist\index.9da0762a.js133548557933879803 0
+62C:\Users\ozgur\Desktop\projektfront\dist\index.9da0762a.js.map133548557933959795 0
