@@ -108,6 +108,7 @@
     "yallist": "^4.0.0"
   },
   "devDependencies": {
+    "@parcel/transformer-sass": "^2.12.0",
     "parcel": "^2.12.0"
   },
   "scripts": {
