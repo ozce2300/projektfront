@@ -601,7 +601,7 @@ async function getDisplay(data) {
             let text = item.name;
             let textNew = text.split(",");
             let mainEL = document.getElementById("main-show");
-            if (name !== "\xd6vrigt" && name !== "Sammanfattning natt" && name !== "Sammanfattning kv\xe4ll och natt" && name !== "Trafikkontroll") mainEL.innerHTML += `
+            if (name !== "\xd6vrigt" && name !== "Sammanfattning natt" && name !== "Sammanfattning kv\xe4ll och natt" && name !== "Trafikkontroll" && name !== "Uppdatering") mainEL.innerHTML += `
         <article class="handelser">
         <h2>${name}</h2>
         <h3>${summary}</h3>

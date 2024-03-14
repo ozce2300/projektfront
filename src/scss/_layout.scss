@@ -1,5 +1,4 @@
 @use "base";
-@use "grid";
 @use "keyframes";
 @use "teckensnitt";
 @use "leaflet";
@@ -9,6 +8,7 @@
     margin: 0;
     padding: 0;
 }
+
 
 #container {
     display: grid;
@@ -70,7 +70,7 @@ main {
     margin: 20px 0;
     display: flex; 
     flex-direction: column; 
-    gap: 20px; 
+    gap: 13px; 
  
 }
 

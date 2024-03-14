@@ -20,7 +20,7 @@ async function getDisplay(data) {
         let textNew = text.split(",")
 
         let mainEL = document.getElementById("main-show")
-        if (name !== "Övrigt" && name !== "Sammanfattning natt"&& name !== "Sammanfattning kväll och natt" && name !== "Trafikkontroll") {
+        if (name !== "Övrigt" && name !== "Sammanfattning natt"&& name !== "Sammanfattning kväll och natt" && name !== "Trafikkontroll" && name !== "Uppdatering") {
         mainEL.innerHTML += `
         <article class="handelser">
         <h2>${name}</h2>
