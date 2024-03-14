@@ -258,8 +258,9 @@ h5 {
 }
 
 .map {
-  width: 300px;
+  width: 320px;
   height: 300px;
+  margin: 0 auto;
 }
 
 * {
