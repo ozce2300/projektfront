@@ -1,8 +1,4 @@
 @use "base";
-.h1 {
-    display: flex;
-    justify-content: center;    
-    max-width: 100vw;
 
 h1 {
     
@@ -12,27 +8,17 @@ h1 {
     text-align: center;
     font-size: 2.5rem;
     
-}}
+}
 
-.main-h1 {
-    
-width: 100%;
-max-width: 100vw;
-display: flex;
-padding: 0 20px;
 
-    h1 {
+h1 {
 
     color: base.$primary-blue;
     font-family: base.$primary-font;
     font-weight: 500;
     font-size: 2.5rem;
     text-align: center;
-    
-
-    }
 }
-
 
 h2 {
     color: base.$primary-blue;
@@ -50,14 +36,10 @@ h3 {
     line-height: 2rem;
 
 
-
 }
 h5 {
     color: base.$primary-blue-third;
     font-family: base.$primary-font;
     font-weight: 100;
     font-size: 1rem;
-
-
-
 }

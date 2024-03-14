@@ -25,7 +25,7 @@ async function getDisplay(data) {
         <article class="handelser">
         <h2>${name}</h2>
         <h3>${summary}</h3>
-        <h5>${textNew[0]} &nbsp;   ${textNew[2]}</h5>
+        <h5>${textNew[0]}  ${textNew[2]}</h5>
         </article>
         `
     }

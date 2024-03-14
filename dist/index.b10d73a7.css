@@ -192,11 +192,10 @@ template, [hidden] {
 }
 
 #container {
-  grid-template: "header" 100vh
-                 "main" 1fr
+  grid-template: "headerr" 100vh
+                 "mainn" 1fr
                  "footer" 1fr
-                 / 100vw;
-  width: 100%;
+                 / 1fr;
   display: grid;
 }
 
@@ -228,29 +227,9 @@ template, [hidden] {
   }
 }
 
-.h1 {
-  justify-content: center;
-  max-width: 100vw;
-  display: flex;
-}
-
-.h1 h1 {
-  color: #fff;
-  text-align: center;
-  font-family: Roboto, helvetica, sans-serif, arial;
-  font-size: 2.5rem;
-  font-weight: 700;
-}
-
-.main-h1 {
-  width: 100%;
-  max-width: 100vw;
-  padding: 0 20px;
-  display: flex;
-}
-
-.main-h1 h1 {
+h1 {
   color: #00539f;
+  text-align: center;
   text-align: center;
   font-family: Roboto, helvetica, sans-serif, arial;
   font-size: 2.5rem;
@@ -291,11 +270,12 @@ h5 {
 
 header {
   background: linear-gradient(to bottom right, #00539f, #39a0ff);
+  grid-area: headerr;
+}
+
+#header-main-mittle {
   flex-direction: column;
-  grid-area: header;
   justify-content: center;
-  width: 100%;
-  max-width: 100vw;
   height: 100vh;
   display: flex;
 }
@@ -317,27 +297,19 @@ header {
 }
 
 main {
-  grid-area: main;
-  width: 100%;
-  max-width: 100vw;
+  grid-area: mainn;
+  padding: 20px;
 }
 
 #main-show {
   box-sizing: border-box;
-  flex-direction: column;
   width: 100%;
-  max-width: 100vw;
-  display: flex;
 }
 
 .handelser {
-  box-sizing: border-box;
   flex-direction: column;
-  gap: 15px;
-  width: 100%;
-  max-width: 100vw;
+  gap: 20px;
   margin: 20px 0;
-  padding: 0 20px;
   display: flex;
 }
 /*# sourceMappingURL=index.b10d73a7.css.map */

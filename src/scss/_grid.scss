@@ -1,9 +1,8 @@
 #container {
-    width: 100%;
     display: grid;
-    grid-template-columns: 100vw;
+    grid-template-columns: 1fr;
     grid-template-rows: 100vh 1fr 1fr;
-    grid-template-areas: "header"
-                        "main"
+    grid-template-areas: "headerr"
+                        "mainn"
                         "footer";
 }
