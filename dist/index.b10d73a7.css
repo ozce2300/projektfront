@@ -191,14 +191,6 @@ template, [hidden] {
   height: 75px;
 }
 
-#container {
-  grid-template: "headerr" 100vh
-                 "mainn" 1fr
-                 "footer" 1fr
-                 / 1fr;
-  display: grid;
-}
-
 @keyframes polissiren {
   0% {
     background-color: #fff;
@@ -268,6 +260,14 @@ h5 {
   padding: 0;
 }
 
+#container {
+  grid-template: "headerr" 100vh
+                 "mainn" 1fr
+                 "footer" 1fr
+                 / 1fr;
+  display: grid;
+}
+
 header {
   background: linear-gradient(to bottom right, #00539f, #39a0ff);
   grid-area: headerr;
@@ -306,9 +306,16 @@ main {
   width: 100%;
 }
 
+.main-h1 {
+  justify-content: center;
+  max-width: 100%;
+  display: flex;
+}
+
 .handelser {
   flex-direction: column;
   gap: 20px;
+  max-width: 80%;
   margin: 20px 0;
   display: flex;
 }
