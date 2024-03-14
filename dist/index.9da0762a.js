@@ -593,25 +593,42 @@ async function getData() {
         console.error("Error", error);
     }
 }
-async function getDisplay(data) {
-    try {
-        await data.forEach((item)=>{
-            let name = item.type;
-            let summary = item.summary;
-            let text = item.name;
-            let textNew = text.split(",");
-            let mainEL = document.getElementById("main-show");
-            if (name !== "\xd6vrigt" && name !== "Sammanfattning natt" && name !== "Sammanfattning kv\xe4ll och natt" && name !== "Trafikkontroll" && name !== "Uppdatering") mainEL.innerHTML += `
-        <article class="handelser">
-        <h2>${name}</h2>
-        <h3>${summary}</h3>
-        <h5>${textNew[0]}  ${textNew[2]}</h5>
-        </article>
-        `;
-        });
-    } catch (error) {
-        console.error("Error", error);
-    }
+function getDisplay(data) {
+    data.forEach((item)=>{
+        let name = item.type;
+        let summary = item.summary;
+        let text = item.name;
+        let textNew = text.split(",");
+        let gps = item.location.gps;
+        let lonlat = gps.split(",");
+        let lat = lonlat[0];
+        let lon = lonlat[1];
+        let mainEL = document.getElementById("main-show");
+        if (name !== "\xd6vrigt" && name !== "Sammanfattning natt" && name !== "Sammanfattning kv\xe4ll och natt" && name !== "Trafikkontroll" && name !== "Uppdatering") {
+            let article = document.createElement("article");
+            article.classList.add("handelser");
+            mainEL.appendChild(article);
+            article.innerHTML += `
+                <h2>${name}</h2>
+                <h3>${summary}</h3>
+                <h5>${textNew[0]}  ${textNew[2]}</h5>
+                <div id="map-id-${lon}" class="map">
+                    <div>
+                `;
+            let map = L.map(`map-id-${lon}`).setView([
+                lat,
+                lon
+            ], 13);
+            L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
+                maxZoom: 19,
+                attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+            }).addTo(map);
+            L.marker([
+                lat,
+                lon
+            ]).addTo(map).bindPopup(`H\xe4r har h\xe4ndelsen skett`).openPopup();
+        }
+    });
 }
 getData();
 
