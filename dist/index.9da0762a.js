@@ -584,13 +584,14 @@ function hmrAccept(bundle /*: ParcelRequire */ , id /*: string */ ) {
 }
 
 },{}],"dcsaV":[function(require,module,exports) {
+let mapCount = 0;
 async function getData() {
     try {
         let response = await fetch("https://polisen.se/api/events");
         let data = await response.json();
         getDisplay(data);
     } catch (error) {
-        console.error("Error", error);
+        console.log("Error", error);
     }
 }
 function getDisplay(data) {
@@ -612,13 +613,14 @@ function getDisplay(data) {
                 <h2>${name}</h2>
                 <h3>${summary}</h3>
                 <h5>${textNew[0]}  ${textNew[2]}</h5>
-                <div id="map-id-${lon}" class="map">
+                <div id="map-id-${mapCount}" class="map"> <!-- Anv\xe4nder mapCount f\xf6r att skapa unika ID:n -->
                     <div>
                 `;
-            let map = L.map(`map-id-${lon}`).setView([
+            let map = L.map(`map-id-${mapCount}`).setView([
                 lat,
                 lon
             ], 13);
+            mapCount++;
             L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
                 maxZoom: 19,
                 attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
