@@ -73,5 +73,5 @@ function searchEvents() {
     getData(currentSearch); 
     let RubrikMainEL = document.querySelector(".rubrik-main"); 
     let bigFirstLetter = currentSearch.charAt(0).toUpperCase() + currentSearch.slice(1); 
-    RubrikMainEL.textContent = `${bigFirstLetter}`; 
+    RubrikMainEL.textContent = ` Senaste händelserna i ${bigFirstLetter}`; 
 }

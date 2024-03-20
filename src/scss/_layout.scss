@@ -67,13 +67,6 @@ main {
     justify-content: center;
 }
 
-.main-h1 h1 {
-    margin: 0; 
-}
-
-.main-h1 h1 + h1 {
-    margin-left: 10px;
-}
 
 .handelser{
     max-width: 100%; 
@@ -81,6 +74,7 @@ main {
     display: flex; 
     flex-direction: column; 
     gap: 13px; 
+    align-items: center;
  
 }
 
@@ -132,9 +126,13 @@ input#text:focus {
 footer {
     display: flex;
     flex-direction: column;
-    height: 10vh;
+    height: 20vh;
     justify-content: center;
     background: base.$primary-blue;
+    color: base.$primary-white;
+    font-family: base.$primary-font;
+    font-weight: 300;
+    text-align: center;
 }
 
 a {

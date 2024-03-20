@@ -3,3 +3,21 @@
     height: 300px;
        width: 320px;
  }
+
+
+ @media screen and (min-width: 700px) and (max-width: 1200px) {
+   
+.map {
+    height: 600px;
+       width: 640px;
+ }
+  }
+
+
+  @media screen and (min-width: 1200px) {
+   
+    .map {
+        height: 900px;
+           width: 840px;
+     }
+      }
