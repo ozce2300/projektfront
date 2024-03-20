@@ -1,13 +1,19 @@
+"use strict";
 let mapCount = 0;
 let displayedEvents = 0;
 let eventsPerPage = 10;
-let visaMerEl = document.getElementById("visa-mer-data")
-visaMerEl.addEventListener("click", displayMoreEvents);
+let currentSearch = ""; 
+document.getElementById("visa-mer-data").addEventListener("click", displayMoreEvents);
+document.getElementById("search-city").addEventListener("click", searchEvents);
 
-
-async function getData() {
+async function getData(currentSearch) {
     try {
-        let response = await fetch("https://polisen.se/api/events");
+        let response;
+        if (currentSearch) {
+            response = await fetch(`https://polisen.se/api/events?locationname=${currentSearch}`);
+        } else {
+            response = await fetch("https://polisen.se/api/events");
+        }
         let data = await response.json();
         displayData(data);
     } catch (error) {
@@ -17,6 +23,9 @@ async function getData() {
 
 function displayData(data) {
     const mainEL = document.getElementById("main-show");
+    if (displayedEvents === 0) {
+        mainEL.innerHTML = ""; 
+    }
     data.slice(displayedEvents, displayedEvents + eventsPerPage).forEach(item => {
         let name = item.type;
         let summary = item.summary;
@@ -30,12 +39,12 @@ function displayData(data) {
         let article = document.createElement("article");
         article.classList.add("handelser");
         mainEL.appendChild(article);
+        if (name !== "Övrigt" && name !== "Sammanfattning natt" && name !== "Sammanfattning kväll och natt" && name !== "Trafikkontroll") {
         article.innerHTML += `
             <h2>${name}</h2>
             <h3>${summary}</h3>
             <h5>${textNew[0]}  ${textNew[2]}</h5>
-            <div id="map-id-${mapCount}" class="map"> <!-- Använder mapCount för att skapa unika ID:n -->
-                <div>
+            <div id="map-id-${mapCount}" class="map"><div>
             `;
         let map = L.map(`map-id-${mapCount}`).setView([lat, lon], 13);
         mapCount++; 
@@ -44,15 +53,25 @@ function displayData(data) {
             attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
         }).addTo(map);
         L.marker([lat, lon]).addTo(map)
-            .bindPopup(`Här har händelsen skett`)
+            .bindPopup(`Händelsestaden`)
             .openPopup();
-    });
+}});
     displayedEvents += eventsPerPage;
 }
 
 getData();
 
-
 function displayMoreEvents() {
-    getData();
+    displayedEvents += eventsPerPage; 
+    getData(currentSearch); 
+}
+
+function searchEvents() {
+    currentSearch = document.getElementById("text").value.toLowerCase();
+    displayedEvents = 0; 
+    mapCount = 0; 
+    getData(currentSearch); 
+    let RubrikMainEL = document.querySelector(".rubrik-main"); 
+    let bigFirstLetter = currentSearch.charAt(0).toUpperCase() + currentSearch.slice(1); 
+    RubrikMainEL.textContent = `${bigFirstLetter}`; 
 }

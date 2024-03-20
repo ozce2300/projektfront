@@ -63,7 +63,16 @@ main {
 
 .main-h1 {
     max-width: 100%;
+    display: flex; 
+    justify-content: center;
+}
 
+.main-h1 h1 {
+    margin: 0; 
+}
+
+.main-h1 h1 + h1 {
+    margin-left: 10px;
 }
 
 .handelser{
@@ -81,7 +90,7 @@ main {
     animation: tilt-shaking .1s infinite;
 }
 
-#visa-mer-data {
+#visa-mer-data, #search-city {
 
     background: base.$primary-blue-secondery;
     padding: 10px 24px;
@@ -101,20 +110,22 @@ padding: 8px 12px;
 }
 
 input#text {
-    transition: outline-color 0.3s ease; /* Gör övergången smidig */
-    outline: 1px solid #ccc; /* Standardramfärg */
+    transition: outline-color 0.3s ease; 
+    outline: 1px solid #ccc; 
 
 
 }
 
 input#text:focus {
-    outline-color:  base.$primary-blue-secondery; /* Ändra ramfärgen till röd när input-fältet är i fokus (när användaren börjar skriva) */
+    outline-color:  base.$primary-blue-secondery; 
 }
 
 
 #input-search {
     display: flex;
     justify-content: center;
+    gap: 15px;
+    margin-bottom: 2%;
 }
 
 
@@ -124,4 +135,10 @@ footer {
     height: 10vh;
     justify-content: center;
     background: base.$primary-blue;
+}
+
+a {
+    list-style: none;
+    text-decoration: none;
+    color: white;
 }

@@ -1,3 +1,4 @@
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 html {
   -webkit-text-size-adjust: 100%;
   line-height: 1.15;
@@ -266,7 +267,7 @@ h1 {
   font-family: Roboto, helvetica, sans-serif, arial;
   font-size: 2rem;
   font-weight: 700;
-  animation: 1s ease-out vanstertillhoger;
+  animation: 1.5s ease-out vanstertillhoger;
 }
 
 h2 {
@@ -350,7 +351,17 @@ main {
 }
 
 .main-h1 {
+  justify-content: center;
   max-width: 100%;
+  display: flex;
+}
+
+.main-h1 h1 {
+  margin: 0;
+}
+
+.main-h1 h1 + h1 {
+  margin-left: 10px;
 }
 
 .handelser {
@@ -367,7 +378,7 @@ main {
   display: flex;
 }
 
-#visa-mer-data {
+#visa-mer-data, #search-city {
   color: #fff;
   cursor: pointer;
   background: #39a0ff;
@@ -395,6 +406,8 @@ input#text:focus {
 
 #input-search {
   justify-content: center;
+  gap: 15px;
+  margin-bottom: 2%;
   display: flex;
 }
 
@@ -404,5 +417,11 @@ footer {
   justify-content: center;
   height: 10vh;
   display: flex;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+  list-style: none;
 }
 /*# sourceMappingURL=index.b10d73a7.css.map */
